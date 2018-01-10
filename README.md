@@ -1,63 +1,70 @@
-# Linux-aliases
-Aliases for Linux which includes some Ruby, Rails, PHP, Laravel aliases
+# Linux Aliases
+
+* System
+* Ruby
+* Rails
+* Git
+* Heroku
+* PHP
+* Laravel
 
 # System
-alias killall='kill -9 $(lsof -i tcp:3000 -t)'
-alias gb='gedit ~/.bashrc'
-alias sb='subl .'
-alias suu='sudo apt update && sudo apt upgrade'
-alias e='exit'
+alias killall='kill -9 $(lsof -i tcp:3000 -t)'<br />
+alias gb='gedit ~/.bashrc'<br />
+alias sb='subl .'<br />
+alias suu='sudo apt update && sudo apt upgrade'<br />
+alias e='exit'<br />
 
 # Ruby
-alias rdm='rake db:migrate'
-alias rdc='rake db:create'
-alias roll='rake db:rollback STEP=1'
-alias bi='bundle install'
-alias be='bundle exec'
-alias rkr='bundle exec rake routes'
-alias berdm='bundle exec rake db:migrate'
-alias ber='bundle exec rspec'
-alias beg='bundle exec guard'
+alias rdm='rake db:migrate'<br />
+alias rdc='rake db:create'<br />
+alias roll='rake db:rollback STEP=1'<br />
+alias bi='bundle install'<br />
+alias be='bundle exec'<br />
+alias rkr='bundle exec rake routes'<br />
+alias berdm='bundle exec rake db:migrate'<br />
+alias ber='bundle exec rspec'<br />
+alias beg='bundle exec guard'<br />
 
 # Rails
-alias rar='rails routes'
-alias rc='rails console'
-alias ras='rails server'
-alias rg='rails generate'
-alias rgm='rails generate migration'
-alias rgc='rails generate controller'
-alias seed='rails db:seed'
+alias rar='rails routes'<br />
+alias rc='rails console'<br />
+alias ras='rails server'<br />
+alias rg='rails generate'<br />
+alias rgm='rails generate migration'<br />
+alias rgc='rails generate controller'<br />
+alias seed='rails db:seed'<br />
 
 # Git
-alias gphom='git push origin master'
-alias gphhm='git push heroku master'
-alias gplom='git pull origin master'
-alias gc='git commit -m '
-alias ga='git add .'
-alias gpho='git push origin'
-alias gplo='git pull origin'
-alias gbh='git branch'
-alias gch='git checkout'
-alias gcm='git checkout master'
-alias gm='git merge'
-alias gcb='git checkout -b'
-PROMPT_COMMAND='_L="$(history 1)"; [ "$_L" != "$_X" ] || git status && _X="$_L"'
+alias gphom='git push origin master'<br />
+alias gphhm='git push heroku master'<br />
+alias gplom='git pull origin master'<br />
+alias gc='git commit -m '<br />
+alias ga='git add .'<br />
+alias gpho='git push origin'<br />
+alias gplo='git pull origin'<br />
+alias gbh='git branch'<br />
+alias gch='git checkout'<br />
+alias gcm='git checkout master'<br />
+alias gm='git merge'<br />
+alias gcb='git checkout -b'<br />
+PROMPT_COMMAND='_L="$(history 1)"; [ "$_L" != "$_X" ] || git status && _X="$_L"'<br />
 
 # Heroku
-alias hro='heroku open'
-alias hrl='heroku logs'
-alias hrseed='heroku run rake db:seed'
-alias hrfig='figaro heroku:set -e production'
+alias hro='heroku open'<br />
+alias hrl='heroku logs'<br />
+alias hrseed='heroku run rake db:seed'<br />
+alias hrfig='figaro heroku:set -e production'<br />
 
 # PHP
-alias artm='php artisan migrate'
-alias ser='php artisan serve'
-alias artroll1='php artisan migrate:rollback --step=1'
-alias lpst='sudo /opt/lampp/lampp start'
-alias lpsp='sudo /opt/lampp/lampp stop'
-alias mysp='sudo service mysql stop'
-alias lprs='sudo /opt/lampp/lampp restart'
+alias artm='php artisan migrate'<br />
+alias ser='php artisan serve'<br />
+alias artroll1='php artisan migrate:rollback --step=1'<br />
+alias lpst='sudo /opt/lampp/lampp start'<br />
+alias lpsp='sudo /opt/lampp/lampp stop'<br />
+alias mysp='sudo service mysql stop'<br />
+alias lprs='sudo /opt/lampp/lampp restart'<br />
 
 # Laravel
-alias pas='php artisan serve'
-alias par='php artisan route:list'
+alias pas='php artisan serve'<br />
+alias par='php artisan route:list'<br />
